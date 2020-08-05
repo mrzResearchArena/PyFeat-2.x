@@ -19,20 +19,20 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --fasta        | -fa                   | string               |  None      | None | ❌ |Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
 | --terminusLength| -t                   | integer              | -t=30      | None | ❌ | The terminusLength 30 to 100  performed well. |
 | --gGap         | -g                    | integer              | -g=5      | None | ❌ | The gap between 1 to 5 performed well. Example: -g=5  |
-| --kTuple       | -k                    | integer              | -k=3      | None | ❌ | The k between 1 to 3 performed well. Example: -k=3  |
-| --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | ✅| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --monoMono          | -f11             | integer |  -f11=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --monoDi            | -f12             | integer |  -f12=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --diMono            | -f21             | integer |  -f13=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSgGaps11         | -g11             | integer |  -g11=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSgGaps12         | -g12             | integer |  -g11=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSgGaps21       | -g21               | integer |  -g12=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSkMers         | -psk               | integer |  -g21=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --binaryProfileFeature | -bpf     | integer |  -bpf=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --BLOSUM62       | -blosum62        | integer |  -blosum62=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PAM250         | -pam250          | integer |  -pam250=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --bits           | -bits            | integer |  -bits=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --BLAST          | -blast           | integer |  -blast=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --kTuple       | -k                    | integer              | -k=3      | None | :x: | The k between 1 to 3 performed well. Example: -k=3  |
+| --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --monoMono          | -f11             | integer |  -f11=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --monoDi            | -f12             | integer |  -f12=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --diMono            | -f21             | integer |  -f13=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSgGaps11         | -g11             | integer |  -g11=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSgGaps12         | -g12             | integer |  -g11=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSgGaps21       | -g21               | integer |  -g12=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSkMers         | -psk               | integer |  -g21=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --binaryProfileFeature | -bpf     | integer |  -bpf=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --BLOSUM62       | -blosum62        | integer |  -blosum62=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PAM250         | -pam250          | integer |  -pam250=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --bits           | -bits            | integer |  -bits=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --BLAST          | -blast           | integer |  -blast=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --transversion   | -tv              | integer |  -tv=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 
