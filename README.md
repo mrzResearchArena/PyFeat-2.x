@@ -17,7 +17,6 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --fasta        | -fa                   | string               |  None      | Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
 | --gGap         | -g                    | integer              | -g=5      | The gap between 1 to 5 performed well. Example: -g=5  |
 | --kTuple       | -k                    | integer              | -k=3      | The k between 1 to 3 performed well. Example: -k=3  |
-
 | --pseudoComposition | -pseudo          | integer |  -pseudo=0   | Set -pseudo=1, if we want to generate features. 1 (On/Active), 0 (Off/Deactive) |
 | --monoMono          | -f11             | integer |  -f11=0      | Set -f11=1, if we want to generate features. |
 | --monoDi            | -f12             | integer |  -f12=0      | Set -f12=1, if we want to generate features. |
