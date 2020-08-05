@@ -6,7 +6,7 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 
 ##### x. Required Python Packages:
 ```
-- Install: python (version >= 3.6)
+- [x] Install: python (version >= 3.6)
 - Install: numpy (version >= 1.15.0)
 ```
 
