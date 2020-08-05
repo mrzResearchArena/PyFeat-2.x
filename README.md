@@ -4,7 +4,7 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 
 &nbsp;
 
-#### Required Python Packages:
+#### 1. Required Python Packages:
 ```
 - Install: python (version >= 3.6)
 - Install: numpy (version >= 1.15.0)
@@ -40,7 +40,7 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 &nbsp;
 
 
-#### Generate Feature:
+#### 2. Generate Feature:
 ##### Generate only the `Binary Profile Feature`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1   # default -seq PROT
