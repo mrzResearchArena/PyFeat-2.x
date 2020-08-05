@@ -52,6 +52,8 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1   # default: -seq PROT.
 user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 30.
 ```
 
+&nbsp;
+
 #### Example-2:
 ##### Generate only the `Position-wised g-Gaps & monoMono Style`
 ``` console
@@ -62,17 +64,22 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 30, -g 5,
 user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: -t 30, -g 5, -k 3.
 ```
 
+&nbsp;
+
 #### Example-3:
 ##### Generate only the `transversion`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -tv 1 -seq DNA # default: -seq PROT.
 ```
+&nbsp;
 
 #### Example-4:
 ##### Generate multiple dataset in a single command
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g11 1
 ```
+
+&nbsp;
 
 **Note:** The PyFeat-2.x tool is able to generate multiple dataset with different parameters.
 
