@@ -33,7 +33,7 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --PAM250         | -pam250          | integer |  -pam250=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --bits           | -bits            | integer |  -bits=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --BLAST          | -blast           | integer |  -blast=0      | {1, 0} | ✅ | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --transversion   | -tv              | integer |  -tv=0      | {1, 0} | ✅ |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --transversion   | -tv              | integer |  -tv=0      | {1, 0} | ✅ ✅|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 
 &nbsp;
