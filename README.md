@@ -27,6 +27,12 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --PSgGaps21       | -g21               | integer |  -g12=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --PSkMers         | -psk               | integer |  -g21=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
+| ----binaryProfileFeature | -bpf     | integer |  -bpf=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --BLOSUM62       | -blosum62        | integer |  -blosum62=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PAM250         | -pam250          | integer |  -pam250=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --bits           | -bits            | integer |  -bits=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --BLAST          | -blast           | integer |  -blast=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --transversion   | -tv              | integer |  -tv=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 &nbsp;
 &nbsp;
