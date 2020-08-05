@@ -13,10 +13,10 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 &nbsp;
 
 ##### Table 1: Details Parameters/Arguments for the Features Generation
-|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices              | Help   |
-|     :---       |    :---:              |  :---:               |  :---:     | :---:                |    ---:|
-| --seqType      | -seq                  | string               | -seq=PROT  | None  |Please use either DNA, RNA, or PROTEIN (PROT). |
-| --fasta        | -fa                   | string               |  None      | None | Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
+|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Feature | Help   |
+|     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   |    ---:|
+| --seqType      | -seq                  | string               | -seq=PROT  | None  | ❌ |Please use either DNA, RNA, or PROTEIN (PROT). |
+| --fasta        | -fa                   | string               |  None      | None | ❌ |Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
 | --terminusLength| -t                   | integer              | -t=30      | None | The terminusLength 30 to 100  performed well. |
 | --gGap         | -g                    | integer              | -g=5      | None | The gap between 1 to 5 performed well. Example: -g=5  |
 | --kTuple       | -k                    | integer              | -k=3      | None | The k between 1 to 3 performed well. Example: -k=3  |
