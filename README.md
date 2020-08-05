@@ -15,10 +15,10 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 ##### Table 1: Details Parameters/Arguments for the Features Generation
 |   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Feature | Help   |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   |    ---:|
-| --seqType      | -seq                  | string               | -seq=PROT  | None  | ❌ |Please use either DNA, RNA, or PROTEIN (PROT). |
-| --fasta        | -fa                   | string               |  None      | None | ❌ |Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
-| --terminusLength| -t                   | integer              | -t=30      | None | ❌ | The terminusLength 30 to 100  performed well. |
-| --gGap         | -g                    | integer              | -g=5      | None | ❌ | The gap between 1 to 5 performed well. Example: -g=5  |
+| --seqType      | -seq                  | string               | -seq=PROT  | None  | :x: |Please use either DNA, RNA, or PROTEIN (PROT). |
+| --fasta        | -fa                   | string               |  None      | None | :x: |Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
+| --terminusLength| -t                   | integer              | -t=30      | None | :x: | The terminusLength 30 to 100  performed well. |
+| --gGap         | -g                    | integer              | -g=5      | None | :x: | The gap between 1 to 5 performed well. Example: -g=5  |
 | --kTuple       | -k                    | integer              | -k=3      | None | :x: | The k between 1 to 3 performed well. Example: -k=3  |
 | --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --monoMono          | -f11             | integer |  -f11=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
