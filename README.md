@@ -20,7 +20,7 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --terminusLength| -t                   | integer              | -t=30      | None | :x: |:x:| The terminusLength 30 to 100  performed well. |
 | --gGap         | -g                    | integer              | -g=5      | None | :x: |:x:| The gap between 1 to 5 performed well. Example: -g=5  |
 | --kTuple       | -k                    | integer              | -k=3      | None | :x: |:x:| The k between 1 to 3 performed well. Example: -k=3  |
-| --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | :heavy_check_mark: |- [x] DNA, - [x] RNA| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --monoMono          | -f11             | integer |  -f11=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --monoDi            | -f12             | integer |  -f12=0      | {1, 0} | :heavy_check_mark: |1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --diMono            | -f21             | integer |  -f13=0      | {1, 0} | :heavy_check_mark: | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
