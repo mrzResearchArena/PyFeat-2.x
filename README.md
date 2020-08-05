@@ -10,6 +10,8 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 - Install: numpy (version >= 1.15.0)
 ```
 
+&nbsp;
+
 ##### Table 1: Details Parameters/Arguments for the Features Generation
 |   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices              | Help   |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:                |    ---:|
@@ -34,7 +36,7 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --BLAST          | -blast           | integer |  -blast=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --transversion   | -tv              | integer |  -tv=0      | {1, 0} | 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
-&nbsp;
+
 &nbsp;
 &nbsp;
 
