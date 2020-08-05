@@ -44,18 +44,22 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 #### Example-1:
 ##### Generate only the `Binary Profile Feature`
 ``` console
-user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1   # default: -seq PROT
+user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1   # default: -seq PROT.
 ```
 
 ##### Generate only the `Binary Profile Feature` with the 40 terminus length.
 ``` console
-user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 30
+user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 30.
 ```
 
 #### Example-2:
-##### Generate only the `Position-wised g-Gaps with monoMono Style`
+##### Generate only the `Position-wised g-Gaps & monoMono Style`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 30, -g 5, -k 3.
+```
+##### Generate only the `Position-wised g-Gaps & monoMono Style` with 3-gaps and 4-mers.
+``` console
+user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: -t 30, -g 5, -k 3.
 ```
 
 
