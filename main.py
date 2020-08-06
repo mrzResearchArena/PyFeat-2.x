@@ -9,9 +9,10 @@ import argparse
 
 def main(args):
     seqType = args.seqType.upper()[:4] # Sequence Type Upper
-    assert args.kTuple > 0, CRED+'The \'kTuple\' value must be greater than 0.'+CEND
-    assert args.gGap > 0, CRED+'The \'gGap\' value must be greater than 0.'+CEND
-    assert args.terminusLength > 1, CRED+'The \'terminusLength\' value must be greater than 1.'+CEND
+    assert args.kTuple > 0, CRED+'The \'kTuple (-k)\' value must be greater than 0.'+CEND
+    assert args.gGap > 0, CRED+'The \'gGap (-g)\' value must be greater than 0.'+CEND
+    assert args.terminusLength > 1, CRED+'The \'terminusLength (-t)\' value must be greater than 1.'+CEND
+    assert args.terminusLength > args.gGap, CRED + 'The \'terminusLength (-t)\' value must be greater than \'gGap (-g)\'.' + CEND
     # assert args.fasta == None, CRED + 'Please insert a valid FASTA file.' + CEND
 
     # print(args.fasta)
@@ -41,12 +42,12 @@ if __name__ == '__main__':
     p.add_argument('-bpf', '--binaryProfileFeature', type=int, help='One Hot Encoding', default=0, choices=[0, 1]) #It is also called "identity matrix".
     p.add_argument('-blosum62', '--BLOSUM62', type=int, help='~', default=0, choices=[0, 1])
     p.add_argument('-pam250', '--PAM250', type=int, help='~', default=0, choices=[0, 1])
-    p.add_argument('-bits', '--bits', type=int, help='~', default=0, choices=[0, 1])
+    p.add_argument('-pcp', '--physicochemicalProperties', type=int, help='~', default=0, choices=[0, 1])
 
-    p.add_argument('-blast', '--BLAST', type=int, help='~', default=0, choices=[0, 1])
-    p.add_argument('-tv', '--transversion', type=int, help='~', default=0, choices=[0, 1])
+    p.add_argument('-blastn', '--BLASTn', type=int, help='~', default=0, choices=[0, 1])
+    p.add_argument('-tt', '--transitionTransversion', type=int, help='~', default=0, choices=[0, 1])
 
-    p.add_argument('-t', '--terminusLength', type=int, help='~', default=30)
+    p.add_argument('-t', '--terminusLength', type=int, help='~', default=50)
     p.add_argument('-g', '--gGap', type=int, help='(l,k,p)-mers', default=5)
     p.add_argument('-k', '--kTuple', type=int, help='k=1 then (X), k=2 then (XX), k=3 then (XXX),', default=3)
 

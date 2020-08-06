@@ -21,6 +21,7 @@ def generate(X, seqType, args):
 
     T = []
     for x in X:
+        x = x[:args.terminusLength]
         t = []
         for i in range(1, args.gGap + 1, 1):
             V = utils.kmers(x, i + 2)

@@ -1,15 +1,15 @@
 import bpf
 import blosum62
 import pam250
-import bits
+import pcp
 
 import pseudo
 import f11
 import f12
 import f21
 
-import blast
-import tv
+import blastn
+import tt
 import psk
 
 import g11
@@ -29,8 +29,8 @@ def generateFeature(X, seqType, args):
         pam250.generate(X, seqType, args)
     #end-if
 
-    if args.bits == 1:
-        bits.generate(X, seqType, args)
+    if args.physicochemicalProperties == 1:
+        pcp.generate(X, seqType, args)
     #end-if
 
     if args.pseudoComposition == 1:
@@ -53,12 +53,12 @@ def generateFeature(X, seqType, args):
         f21.generate(X, seqType, args)
     # end-if
 
-    if args.BLAST == 1:
-        blast.generate(X, seqType, args)
+    if args.BLASTn == 1:
+        blastn.generate(X, seqType, args)
     # end-if
 
-    if args.transversion == 1:
-        tv.generate(X, seqType, args)
+    if args.transitionTransversion == 1:
+        tt.generate(X, seqType, args)
     # end-if
 
     if args.PSkMers == 1:

@@ -44,7 +44,7 @@ def generate(X, seqType, args):
         T.append(np.concatenate((merged), axis=1))
     # end-for
     T = np.array(T)
-    print(T.shape)
+    # print(T.shape)
 
     totalFeature = 0
     if seqType == 'DNA' or seqType == 'RNA':
