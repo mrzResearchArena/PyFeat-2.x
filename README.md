@@ -83,8 +83,29 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g1
 
 **Note:** The PyFeat-2.x tool is able to generate multiple dataset with different parameters.
 
+&nbsp;
+
 ### 3. Merge Feature:
+#### Example-1:
+##### Input Format:
 ```
-user@machine:~$ python merge.py g11-16.npy g11-16.npy
+user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy>
+user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy> <anyFileName.npy>
+```
+&nbsp;
+
+#### Example-2:
+##### Merger Two File
+```
+user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
 
+&nbsp;
+
+#### Example-3:
+##### Merger Three File
+```
+user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
+```
+&nbsp;
+**Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
