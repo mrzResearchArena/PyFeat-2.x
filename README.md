@@ -31,9 +31,9 @@ PyFeat–2.x is an extensive Python-based tool for generating various numerical 
 | --binaryProfileFeature | -bpf     | integer |  -bpf=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --BLOSUM62       | -blosum62        | integer |  -blosum62=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --PAM250         | -pam250          | integer |  -pam250=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --bits           | -bits            | integer |  -bits=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --BLAST          | -blast           | integer |  -blast=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --transversion   | -tv              | integer |  -tv=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalProperties           | -pcp            | integer |  -bits=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --BLASTn          | -blastn           | integer |  -blast=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --transitionTransversion   | -tt              | integer |  -tv=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 
 &nbsp;
@@ -69,7 +69,7 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: 
 #### Example-3:
 ##### Generate only the `transversion`
 ``` console
-user@machine:~$ python main.py -fa anyFASTA.fasta -tv 1 -seq DNA # default: -seq PROT.
+user@machine:~$ python main.py -fa anyFASTA.fasta -tt 1 -seq DNA # default: -seq PROT.
 ```
 &nbsp;
 
@@ -99,7 +99,6 @@ user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
-
 &nbsp;
 
 #### Example-3:
@@ -107,5 +106,6 @@ user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
 ```
+
 &nbsp;
 **Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
