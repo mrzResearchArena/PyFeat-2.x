@@ -83,4 +83,8 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g1
 
 **Note:** The PyFeat-2.x tool is able to generate multiple dataset with different parameters.
 
+### 3. Merge Feature:
+```
+user@machine:~$ python merge.py g11-16.npy g11-16.npy
+```
 
