@@ -78,12 +78,12 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 ### 2. Generate Feature:
 #### Example-1:
-##### Generate only the `Binary Profile Feature`
+- ##### Generate only the `Binary Profile Feature`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1   # default: -seq PROT.
 ```
 
-##### Generate only the `Binary Profile Feature` with the 40 terminus length.
+- ##### Generate only the `Binary Profile Feature` with the 40 terminus length.
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 50.
 ```
