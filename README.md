@@ -49,13 +49,13 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 &nbsp;
 
 ### Table 1: Details Parameters/Arguments for the Features Generation
-|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Help |
+|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Argument Help |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   | :---:      |  ---:|
-| --seqType      | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:|Please use either DNA, RNA, or PROTEIN (PROT). |
-| --fasta        | -fa                   | string               |  -fa=samplePROT.fasta | None | :x: |:no_entry:|Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
+| --seqType      | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:| Please use {DNA, dna} for DNA squences, {RNA, rna} for RNA squences, {PROT, prot} for protein/peptide squences. |
+| --fasta        | -fa                   | string               |  -fa=samplePROT.fa | None | :x: |:no_entry:| Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
 | --terminusLength| -t                   | integer              | -t=50      | None | :x: |:no_entry:| The terminusLength 30 to 100  performed well. |
-| --gGap         | -g                    | integer              | -g=5      | None | :x: |:no_entry:| The gap between 1 to 5 performed well. Example: -g=5  |
-| --kTuple       | -k                    | integer              | -k=3      | None | :x: |:no_entry:| The k between 1 to 3 performed well. Example: -k=3  |
+| --gGap         | -g                    | integer              | -g=5      | None | :x: |:no_entry:| The -g value is between 1 to 5 performed well. |
+| --kTuple       | -k                    | integer              | -k=3      | None | :x: |:no_entry:| The -k value is between 1 to 3 performed well. |
 | --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --monoMono          | -f11             | integer |  -f11=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --monoDi            | -f12             | integer |  -f12=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
