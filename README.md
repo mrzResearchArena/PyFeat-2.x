@@ -76,7 +76,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 > **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
-> **Note:** We can use both long arguments and short arguments. (I always use a short argument to reduce typing and time. :smile:)
+> **Note:** We can use both long arguments and short arguments. (Prsonally, I always use a short argument to reduce typing and time. :smile:)
 
 &nbsp;
 
@@ -90,6 +90,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi spaces are allowed. |
 
 > **Note:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
+>> **Note:** Personally, I never use a `=` in arguments.
 
 &nbsp;
 
