@@ -1,6 +1,15 @@
 # PyFeat-2.x
-
-PyFeat–2.x is an extensive Python-based tool for generating various numerical feature representation schemes from DNA, RNA, and protein primary structure sequences.
+```
+In Bioinformatics research, we usually noticed that using the same biological sequences and
+even the same algorithms, but the performance varies a lot. Researchers unearth the riddle, it
+is merely the different feature representation process [cite]. Feature representation techniques
+drastically enhance the performance. We firmly do believe rational feature representation
+techniques are a major significant contribution in Algorithomic-Bioinformatics and Machine
+Learning in Biological Sciences research.
+The Deep-PyFeat/PyFeat–2.0 is an extensive Deep Learning friendly Python-based tool
+for generating various numerical feature representation schemes from DNA, RNA, and pro-
+tein primary structure sequences.
+```
 
 &nbsp;
 
