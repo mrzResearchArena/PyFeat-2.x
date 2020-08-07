@@ -49,7 +49,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 &nbsp;
 
 ### Table 1: Details Parameters/Arguments for the Features Generation
-|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Feature | Applicable | Help |
+|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Help |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   | :---:      |  ---:|
 | --seqType      | -seq                  | string               | -seq PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:|Please use either DNA, RNA, or PROTEIN (PROT). |
 | --fasta        | -fa                   | string               |  None      | None | :x: |:no_entry:|Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
