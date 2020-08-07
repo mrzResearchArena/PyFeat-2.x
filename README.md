@@ -22,7 +22,7 @@ We incorporated a bunch of state-of-the-art feature groups for DNA, RNA, and pro
 #### 2.1. Direct Download
 We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat-2.x) by clicking the link.
 
->> **Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
+> **Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
 
 ***`or,`***
 
@@ -34,11 +34,9 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 &nbsp;
 
-##### Note #1: If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat-2.x) as the `GitHub` repository that we cloned.
-
-##### Note #2: We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user/`.
-
-##### Note #3: `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
+> ##### Note #1: If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat-2.x) as the `GitHub` repository that we cloned.
+> ##### Note #2: We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user/`.
+> ##### Note #3: `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
 
 
 &nbsp;
@@ -75,7 +73,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | --BLASTn          | -blastn           | integer |  -blastn=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
-**Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
+> **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
 
 &nbsp;
 
@@ -128,7 +126,7 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -tt 1 -seq DNA # default: -seq
 user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g11 1
 ```
 
-**Note:** The PyFeat-2.x tool is able to generate multiple dataset with different parameters.
+> **Note:** The PyFeat-2.x tool is able to generate multiple dataset with different parameters.
 
 &nbsp;
 
@@ -152,4 +150,4 @@ user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
 ```
 
-**Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
+> **Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
