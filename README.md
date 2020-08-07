@@ -1,6 +1,6 @@
 # PyFeat-2.x: A Python-based Effective Feature Generation Tool from DNA, RNA, and Protein/Peptide Sequences
 
-#### Background/Motivation:
+#### Background / Motivation / Abstract / Gist:
 In Bioinformatics research, we usually noticed that using the same biological sequences and
 even the same algorithms, but the performance varies a lot. Researchers unearth the riddle, it
 is merely the different feature representation process. Feature representation techniques
