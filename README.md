@@ -53,7 +53,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 &nbsp;
 
 ### Table 1: Details Parameters/Arguments for the Features Generation:
-|   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Argument Help |
+|   Long Argument|   Short Argument |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Argument Help |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   | :---:      |  ---:|
 | --seqType      | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:| Please use {DNA, dna} for DNA squences, {RNA, rna} for RNA squences, {PROT, prot} for protein/peptide squences. |
 | --fasta        | -fa                   | string               |  -fa=samplePROT.fa | None | :x: |:no_entry:| Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
@@ -76,6 +76,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 > **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
+> **Note:** We can use both long arguments and short arguments. (I always use a short argument to reduce typing and time. :smile:)
 
 &nbsp;
 
@@ -86,7 +87,9 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | -seq=PROT |  :heavy_check_mark: | None |
 | -seq = PROT |    :x:   |   Please trim the space both side of the `=`. |
 | -seq PROT |  :heavy_check_mark: | None |
-| -seq &nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None |
+| -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi spaces are allowed. |
+
+> **Note:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
 
 &nbsp;
 
