@@ -91,11 +91,11 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 5
 &nbsp;
 
 #### Example-2:
-##### Generate only the `Position-wised g-Gaps & monoMono Style`
+- ##### Generate only the `Position-wised g-Gaps & monoMono Style`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 50-g 5, -k 3.
 ```
-##### Generate only the `Position-wised g-Gaps & monoMono Style` with 3-gaps and 4-mers.
+- ##### Generate only the `Position-wised g-Gaps & monoMono Style` with 3-gaps and 4-mers.
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: -t 30, -g 5, -k 3.
 ```
@@ -103,14 +103,14 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: 
 &nbsp;
 
 #### Example-3:
-##### Generate only the `transversion`
+- ##### Generate only the `transversion`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -tt 1 -seq DNA # default: -seq PROT.
 ```
 &nbsp;
 
 #### Example-4:
-##### Generate multiple dataset in a single command
+- ##### Generate multiple dataset in a single command
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g11 1
 ```
@@ -123,7 +123,7 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g1
 
 ### 3. Merge Feature:
 #### Example-1:
-##### Input Format:
+- ##### Input Format:
 ```
 user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy>
 user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy> <anyFileName.npy>
@@ -131,14 +131,14 @@ user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy
 &nbsp;
 
 #### Example-2:
-##### Merger Two File
+- ##### Merger Two File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
 &nbsp;
 
 #### Example-3:
-##### Merger Three File
+- ##### Merger Three File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
 ```
