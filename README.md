@@ -14,15 +14,15 @@ We incorporated a bunch of state-of-the-art feature groups for DNA, RNA, and pro
 
 &nbsp;
 
-### 1. Download Package
-#### 1.1. Direct Download
+### 2. Download Package
+#### 2.1. Direct Download
 We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat-2.x) by clicking the link.
 
 **Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
 
 ***`or,`***
 
-#### 1.2. Clone a GitHub Repository (Optional)
+#### 2.2. Clone a GitHub Repository (Optional)
 
 Cloning a repository syncs it to our local machine (Example for Linux-based OS). After clone, we can add and edit files and then push and pull updates.
 - Clone over HTTPS: `user@machine:~$ git clone https://github.com/mrzResearchArena/PyFeat-2.x.git `
@@ -40,7 +40,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 &nbsp;
 
 
-### 2. Required Python Packages:
+### 3. Required Python Packages:
 ```
 - Install: python (version >= 3.6)
 - Install: numpy (version >= 1.15.0)
@@ -73,10 +73,9 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 
 &nbsp;
-&nbsp;
 
 
-### 2. Generate Feature:
+### 3. Generate Feature:
 #### Example-1:
 - ##### Generate only the `Binary Profile Feature`
 ``` console
@@ -88,8 +87,6 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1   # default: -seq PROT.
 user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 50.
 ```
 
-&nbsp;
-
 #### Example-2:
 - ##### Generate only the `Position-wised g-Gaps & monoMono Style`
 ``` console
@@ -100,14 +97,11 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 50-g 5, -
 user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: -t 30, -g 5, -k 3.
 ```
 
-&nbsp;
-
 #### Example-3:
 - ##### Generate only the `transversion`
 ``` console
 user@machine:~$ python main.py -fa anyFASTA.fasta -tt 1 -seq DNA # default: -seq PROT.
 ```
-&nbsp;
 
 #### Example-4:
 - ##### Generate multiple dataset in a single command
@@ -115,33 +109,30 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -tt 1 -seq DNA # default: -seq
 user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g11 1
 ```
 
-&nbsp;
-
 **Note:** The PyFeat-2.x tool is able to generate multiple dataset with different parameters.
 
 &nbsp;
 
-### 3. Merge Feature:
+### 4. Merge Feature:
 #### Example-1:
 - ##### Input Format:
 ```
 user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy>
 user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy> <anyFileName.npy>
 ```
-&nbsp;
 
 #### Example-2:
 - ##### Merger Two File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
-&nbsp;
 
 #### Example-3:
-- ##### Merger Three File
+- ##### Merge Three File, or Merge Multiple File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
 ```
 
 &nbsp;
+
 **Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
