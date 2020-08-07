@@ -122,7 +122,7 @@ user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy
 ```
 
 #### Example-2:
-- ##### Merger Two File
+- ##### Merge Two File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
@@ -132,7 +132,5 @@ user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
 ```
-
-&nbsp;
 
 **Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
