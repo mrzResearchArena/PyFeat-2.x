@@ -86,7 +86,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | -seq=PROT |  :heavy_check_mark: | None |
 | -seq = PROT |    :x:   |   Please trim the space both side of the `=`. |
 | -seq PROT |  :heavy_check_mark: | None |
-| -seq       PROT |  :heavy_check_mark: | None |
+| -seq $emsp PROT |  :heavy_check_mark: | None |
 
 &nbsp;
 
