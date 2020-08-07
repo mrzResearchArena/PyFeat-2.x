@@ -52,7 +52,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 &nbsp;
 
-### Table 1: Details Parameters/Arguments for the Features Generation
+### Table 1: Details Parameters/Arguments for the Features Generation:
 |   Argument     |   Argument (Shortcut) |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Argument Help |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   | :---:      |  ---:|
 | --seqType      | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:| Please use {DNA, dna} for DNA squences, {RNA, rna} for RNA squences, {PROT, prot} for protein/peptide squences. |
@@ -77,8 +77,18 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
 
+### Table 2: How does the use parameter?
+
+| Argument Segment   |     Is it a valid?      | Issue  |
+|----------|:-------------:|------:|
+| -seq=PROT |  :heavy_check_mark: | None |
+| -seq = PROT |    :x:   |   Please trim the space both side of the `=`. |
+
 &nbsp;
 
+
+
+&nbsp;
 
 ### 3. Generate Feature:
 #### Example-1:
