@@ -24,7 +24,6 @@ We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=http
 
 > **Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
 
-***`or,`***
 
 #### 2.2. Clone a GitHub Repository (Optional)
 
@@ -34,11 +33,11 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 &nbsp;
 
-> **Note #1:** If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat-2.x) as the `GitHub` repository that we cloned.
+> **Note-1:** If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat-2.x) as the `GitHub` repository that we cloned.
 
-> **Note #2:** We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user/`.
+> **Note-2:** We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user/`.
 
-> **Note #3:** `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
+> **Note-3:** `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
 
 
 &nbsp;
@@ -92,9 +91,9 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | -seq PROT |  :heavy_check_mark: | None |
 | -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi spaces are allowed. |
 
-> **Note:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
+> **Note-1:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
 
-> **Note:** Helpful Tips: Please do not use a `=` in arguments. :smile:
+> **Note-2:** Helpful Tips: Please do not use a `=` in arguments. :smile:
 
 &nbsp;
 
