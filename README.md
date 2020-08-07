@@ -9,6 +9,11 @@ for generating various numerical feature representation schemes from DNA, RNA, a
 
 &nbsp;
 
+### 1. How does it works?:
+It takes FASTA file (anyName.fasta, anyName.fa, anyName.txt) as input and produces the feature(s) as NumPy array format (~.npy).
+
+&nbsp;
+
 ### 1. Download Package
 #### 1.1. Direct Download
 We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat-2.x) by clicking the link.
