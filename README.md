@@ -34,9 +34,9 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 &nbsp;
 
-> ##### Note #1: If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat-2.x) as the `GitHub` repository that we cloned.
-> ##### Note #2: We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user/`.
-> ##### Note #3: `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
+> **Note #1:** If the clone was successful, a new sub-directory appears on our local drive. This directory has the same name (PyFeat-2.x) as the `GitHub` repository that we cloned.
+> **Note #2:** We can run any Linux-based command from any valid location or path, but by default, a command generally runs from `/home/user/`.
+> **Note #3:** `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
 
 
 &nbsp;
@@ -85,10 +85,6 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | -seq = PROT |    :x:   |   Please trim the space both side of the `=`. |
 | -seq PROT |  :heavy_check_mark: | None |
 | -seq $emsp PROT |  :heavy_check_mark: | None |
-
-&nbsp;
-
-
 
 &nbsp;
 
