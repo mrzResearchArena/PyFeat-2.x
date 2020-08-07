@@ -17,7 +17,7 @@ We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=http
 
 ***`or,`***
 
-### 1.2. Clone a GitHub Repository (Optional)
+#### 1.2. Clone a GitHub Repository (Optional)
 
 Cloning a repository syncs it to our local machine (Example for Linux-based OS). After clone, we can add and edit files and then push and pull updates.
 - Clone over HTTPS: `user@machine:~$ git clone https://github.com/mrzResearchArena/PyFeat-2.x.git `
@@ -30,11 +30,10 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 **Note #3:** `user` is the name of our computer but your computer name can be different (Example: `/home/bioinformatics/`).
 
 
-
 &nbsp;
 
 
-### 1. Required Python Packages:
+### 2. Required Python Packages:
 ```
 - Install: python (version >= 3.6)
 - Install: numpy (version >= 1.15.0)
