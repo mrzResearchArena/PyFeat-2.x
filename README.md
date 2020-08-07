@@ -77,6 +77,8 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
 
+&nbsp;
+
 ### Table 2: How does the use parameter?
 
 | Argument Segment   |     Is it a valid?      | Issue  |
