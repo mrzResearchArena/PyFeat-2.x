@@ -76,7 +76,9 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
 > **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
+
 > **Note:** We can use both long arguments and short arguments.
+
 > **Note:** Helpful Tips: Please always use a short argument to reduce typing and time. :smile:
 
 &nbsp;
