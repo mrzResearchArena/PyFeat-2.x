@@ -92,7 +92,7 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 5
 #### Example-2:
 - ##### Generate only the `Position-wised g-Gaps & monoMono Style`
 ``` console
-user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 50-g 5, -k 3.
+user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 50 -g 5, -k 3.
 ```
 - ##### Generate only the `Position-wised g-Gaps & monoMono Style` with 3-gaps and 4-mers.
 ``` console
