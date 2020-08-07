@@ -22,7 +22,7 @@ We incorporated a bunch of state-of-the-art feature groups for DNA, RNA, and pro
 #### 2.1. Direct Download
 We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat-2.x) by clicking the link.
 
-**Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
+>> **Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
 
 ***`or,`***
 
