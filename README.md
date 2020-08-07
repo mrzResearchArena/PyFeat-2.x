@@ -77,7 +77,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 > **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
 > **Note:** We can use both long arguments and short arguments.
-> **Note:** Personally, I always use a short argument to reduce typing and time. :smile:
+> **Note:** Helpful Tips: Please always use a short argument to reduce typing and time. :smile:
 
 &nbsp;
 
@@ -91,7 +91,8 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi spaces are allowed. |
 
 > **Note:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
-> **Note:** Personally, I never use a `=` in arguments.
+
+> **Note:** Helpful Tips: Please do not use a `=` in arguments. :smile:
 
 &nbsp;
 
