@@ -9,8 +9,8 @@ for generating various numerical feature representation schemes from DNA, RNA, a
 
 &nbsp;
 
-### 1. How does it works?:
-It takes FASTA file (anyName.fasta, anyName.fa, anyName.txt) as input and produces the feature(s) as NumPy array format (~.npy).
+### 1. How does it works? or, What is the primary goal of the package?
+`PyFeat-2.x` takes FASTA file (anyName.fasta, anyName.fa, anyName.txt) as an input with some parameters; produces the feature(s) as NumPy array format (~.npy).
 
 &nbsp;
 
