@@ -74,7 +74,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | --BLASTn          | -blastn           | integer |  -blastn=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
-> **Note:** The `=` is the optional for parameter agument, but if you use the `=`, please make sure there will be no space besides the `=` sign.
+> **Note:** The `= sign` is the optional for parameter agument, but if you use the `= sign`, please make sure there will be no space besides the `= sign`. (To know more explanation, please see Table 2.)
 
 > **Note:** We can use both long arguments and short arguments.
 
@@ -87,7 +87,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | Argument Segment   |     Is it a valid?      | Issue  |
 |----------|:-------------:|------:|
 | -seq=PROT |  :heavy_check_mark: | None |
-| -seq = PROT |    :x:   |   Please trim the space both side of the `=`. |
+| -seq = PROT |    :x:   |   Please trim the blank spaces on both sides of the `= sign`. |
 | -seq PROT |  :heavy_check_mark: | None |
 | -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi spaces are allowed. |
 
