@@ -78,7 +78,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 > **Note:** We can use both long arguments and short arguments.
 
-> **Note:** Helpful Tips: I always use a short argument to reduce typing and time. :smile:
+> **Note:** Helpful Tips: You can always use a short argument to reduce typing and time.
 
 &nbsp;
 
@@ -93,7 +93,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 
 > **Note-1:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
 
-> **Note-2:** Helpful Tips: I do not use a `=` in arguments. :smile:
+> **Note-2:** Helpful Tips: You can avoid `=` in arguments.
 
 &nbsp;
 
