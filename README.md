@@ -18,14 +18,7 @@ We incorporated a bunch of state-of-the-art feature groups for DNA, RNA, and pro
 
 Feature Generate Process       | Merge Feature Process
 :-----------------------------:|:--------------------------
-![Feature-Generate](https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Feature-Generate.png)|![](NUST_image/gene-4.png)|![Merge-Feature](https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Merge-Feature.png)
-
-
- Tables   |      Are     
- --------:|:-------------
- col 1 is |  left-aligned
- col 2 is |    centered  
- col 3 is | right-aligned
+<img src="https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Feature-Generate.png" width="200" height="200" /> | <img src="https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Merge-Feature.png" width="200" height="200" />
 
 &nbsp;
 
