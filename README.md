@@ -137,20 +137,20 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bits 1 blosum62 1 pam250 1 g1
 
 ### 4. Merge Feature:
 
-###### Input Format:
+#### Input Format:
 ```
 user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy>
 user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy> <anyFileName.npy>
 ```
 
-##### Example-1:
-- ####### Merge Two File
+#### Example-1:
+- ##### Merge Two File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
 ```
 
-##### Example-2:
-- ###### Merge Three File, or Merge Multiple File
+#### Example-2:
+- ##### Merge Three File, or Merge Multiple File
 ```
 user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
 ```
