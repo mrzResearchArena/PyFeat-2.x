@@ -16,8 +16,9 @@ for generating various numerical feature representation schemes from DNA, RNA, a
 ### 1. How does it works? or, What is the primary goal of the package?
 We incorporated a bunch of state-of-the-art feature groups for DNA, RNA, and protein sequence. `PyFeat-2.x` takes FASTA file (anyName.fasta, anyName.fa, anyName.txt) as an input with some parameters for a specific type of sequences; produces the features as NumPy array format (~.npy).
 
-![Feature-Generate](https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Feature-Generate.png)
-![Merge-Feature](https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Merge-Feature.png)
+Feature Generate Process       | Merge Feature Process
+:-----------------------------:|:--------------------------
+![Feature-Generate](https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Feature-Generate.png)|![](NUST_image/gene-4.png)|![Merge-Feature](https://github.com/mrzResearchArena/PyFeat-2.x/blob/master/Figures/Merge-Feature.png)
 
 &nbsp;
 
