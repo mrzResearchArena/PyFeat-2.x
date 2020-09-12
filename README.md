@@ -81,7 +81,7 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 | --physicochemicalPropertiesP5           | -pcpP5            | integer |  -pcpP5=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --physicochemicalPropertiesD1           | -pcpD1            | integer |  -pcpD1=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA </li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --physicochemicalPropertiesD2           | -pcpD2            | integer |  -pcpD2=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA </li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --physicochemicalPropertiesR1           | -pcpR1            | integer |  -pcpR1=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesR1           | -pcpR1            | integer |  -pcpR1=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] RNA </li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --BLASTn          | -blastn           | integer |  -blastn=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
