@@ -1,8 +1,9 @@
-# print('XX---X')
+# print('X---XX')
 
 import utils
 import itertools
 import numpy as np
+import save
 
 def generate(X, seqType, args):
     '''
@@ -13,6 +14,7 @@ def generate(X, seqType, args):
     :param args:
     :return:
     '''
+
     elements = utils.sequenceElements(seqType)
     m3 = list(itertools.product(elements, repeat=3))
     m = m3
@@ -32,14 +34,14 @@ def generate(X, seqType, args):
                 # trackingFeatures.append(gGap[0] + '-' * i + gGap[1])
                 C = 0
                 for v in V:
-                    if v[0] == gGap[0] and v[1] == gGap[1] and v[-1] == gGap[2]:
+                    if v[0] == gGap[0] and v[-2] == gGap[1] and v[-1] == gGap[2]:
                         C += 1
                 # print(C, end=',')
                 t.append(C)
             #end-for
         #end-for
         t = np.array(t)
-        t = t.reshape(-1, 1)
+        # t = t.reshape(-1, 1)
         T.append(t)
     # end-for
     T = np.array(T)
@@ -47,12 +49,12 @@ def generate(X, seqType, args):
 
     totalFeature = 0
     if seqType == 'DNA' or seqType == 'RNA':
-        totalFeature = ((4*4)*args.gGap*4)
+        totalFeature = (4*args.gGap*(4*4))
     else:
         if seqType == 'PROT':
-            totalFeature = ((20*20)*args.gGap*20)
+            totalFeature = (20*args.gGap*(20*20))
         else: None
     #end-if
-    np.save(arr=T, file='f21-{}'.format(totalFeature))
-    print('f21-{}.npy generated.'.format(totalFeature))
+
+    save.datasetSave(T, totalFeature, 'fg12')
 #end-def

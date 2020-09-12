@@ -1,8 +1,16 @@
 import numpy as np
 import itertools
 import utils
+import save
 
 def generate(X, seqType, args):
+    '''
+    :param X:
+    :param seqType:
+    :param args:
+    :return:
+    '''
+
     if seqType == 'DNA' or seqType == 'RNA':
         p = [0]*(4*4*4) # As we are working for g12
     else:
@@ -55,6 +63,6 @@ def generate(X, seqType, args):
         else:
             None
     # end-if
-    np.save(arr=T, file='g12-{}'.format(totalFeature))
-    print('g12-{}.npy generated.'.format(totalFeature))
+
+    save.datasetSave(T, totalFeature, 'pg12')
 #end-for

@@ -1,14 +1,20 @@
+CRED = '\033[91m'
+CEND = '\033[0m'
+
 import utils
 import numpy as np
+import save
 
 def generate(X, seqType, args):
     '''
-    # Reference: http://rosalind.info/glossary/pam250/
+    # Reference-1: http://rosalind.info/glossary/pam250/
+    # Reference-2: http://profs.scienze.univr.it/~liptak/ALBioinfo/2011_2012/files/pam1.pdf (M.O. Dayhoff et al.)
     :param X:
     :param seqType:
     :param args:
     :return:
     '''
+
     if seqType == 'PROT':
         d = {
             'A': [ 2, -2,  0,  0, -3,  1, -1, -1, -1, -2, -1,  0,  1,  0, -2,  1,  1,  0, -6, -3],
@@ -35,11 +41,12 @@ def generate(X, seqType, args):
         }
     else:
         if seqType == 'DNA' or seqType == 'RNA':
+            print(CRED + 'Error: The \'PAM250\' feature is NOT applicable for DNA/RNA.' + CEND)
             return None
         else:
             return None
     #end-if
-    X = utils.process(X, d, args)
+    X = utils.processMono(X, d, args)
     # print(X.shape)
 
     totalFeature = 0
@@ -51,6 +58,6 @@ def generate(X, seqType, args):
         else:
             None
     # end-if
-    np.save(arr=X, file='pam250-{}'.format(totalFeature))
-    print('pam250-{}.npy generated.'.format(totalFeature))
+
+    save.datasetSave(X, totalFeature, 'pam250')
 #end-def

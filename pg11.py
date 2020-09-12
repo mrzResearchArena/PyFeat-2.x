@@ -1,30 +1,38 @@
 import numpy as np
 import itertools
 import utils
+import save
 
 def generate(X, seqType, args):
+    '''
+    :param X:
+    :param seqType:
+    :param args:
+    :return:
+    '''
+
     if seqType == 'DNA' or seqType == 'RNA':
-        p = [0]*(4*4*4) # As we are working for g11
+        p = [0]*(4*4) # As we are working for g11
     else:
         if seqType == 'PROT':
-            p = [0] * (20*20*20) # As we are working for g21
+            p = [0] * (20*20) # As we are working for g11
         else: None
 
     # Trail: Merged
     elements = utils.sequenceElements(seqType)
-    m = list(itertools.product(elements, repeat=3))
+    m = list(itertools.product(elements, repeat=2))
 
     T = []
     for x in X:
         merged = []
         x = x[:args.terminusLength]
         for i in range(1, args.gGap + 1):
-            kmers = utils.kmers(x, 3 + i)  # g12 --> 3, gGap (g11+gGap)
+            kmers = utils.kmers(x, 2 + i)  # g11 --> 2, gGap (g11+gGap)
             t = []
-            require = (args.terminusLength - (3 + 1) + 1) - (len(x) - (3 + i) + 1)
+            require = (args.terminusLength - (2 + 1) + 1) - (len(x) - (2 + i) + 1)
             for kmer in kmers:
                 d = {''.join(_): 0 for _ in m}
-                segment = kmer[0] + kmer[1] + kmer[-1]
+                segment = kmer[0] + kmer[-1]
                 d[segment] = 1
                 t.append(list(d.values()))
                 # break
@@ -44,17 +52,16 @@ def generate(X, seqType, args):
         T.append(np.concatenate((merged), axis=1))
     # end-for
     T = np.array(T)
-    print(T.shape)
+    # print(T.shape)
 
     totalFeature = 0
     if seqType == 'DNA' or seqType == 'RNA':
-        totalFeature = (4 * 4 * args.gGap * 4 )
+        totalFeature = (4 * args.gGap * 4 )
     else:
         if seqType == 'PROT':
-            totalFeature = (20 * 20 * args.gGap * 20)
+            totalFeature = (20 * args.gGap * 20)
         else:
             None
     # end-if
-    np.save(arr=T, file='g21-{}'.format(totalFeature))
-    print('g21-{}.npy generated.'.format(totalFeature))
+    save.datasetSave(T, totalFeature, 'pg11')
 #end-for

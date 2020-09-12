@@ -1,9 +1,16 @@
 import numpy as np
 import itertools
 import utils
-
+import save
 
 def generate(X, seqType, args):
+    '''
+    :param X:
+    :param seqType:
+    :param args:
+    :return:
+    '''
+
     if seqType == 'DNA' or seqType == 'RNA':
         p = [0]*(4**args.kTuple)
     else:
@@ -56,6 +63,6 @@ def generate(X, seqType, args):
         else:
             None
     # end-if
-    np.save(arr=T, file='psk-{}'.format(totalFeature))
-    print('psk-{}.npy generated.'.format(totalFeature))
+
+    save.datasetSave(T, totalFeature, 'pkmer')
 #end-def
