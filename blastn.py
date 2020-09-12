@@ -1,19 +1,19 @@
 CRED = '\033[91m'
 CEND = '\033[0m'
 
-# Reference: https://www.cs.cmu.edu/~02710/Lectures/ScoringMatrices2015.pdf
-
 import utils
 import numpy as np
+import save
 
 def generate(X, seqType, args):
     '''
-    # Reference: It is a very common feature.
+    # Reference: https://www.cs.cmu.edu/~02710/Lectures/ScoringMatrices2015.pdf
     :param X:
     :param seqType:
     :param args:
     :return:
     '''
+
     if seqType == 'DNA':
         d = {
             'A': [ 5, -4, -4, -4],
@@ -32,25 +32,24 @@ def generate(X, seqType, args):
                 'p': [ 0,  0,  0,  0],  # padding
             }
         else:
-            if seqType == 'PROT': None
-            else: None
+            if seqType == 'PROT':
+                print(CRED + 'Error: The \'BLASTn\' feature is NOT applicable for PROT.' + CEND)
+                return None
+            else:
+                return None
     #end-if
     # print(X)
-    try:
-        X = utils.process(X, d, args)
+    X = utils.processMono(X, d, args)
 
-        totalFeature = 0
-        if seqType == 'DNA' or seqType == 'RNA':
-            totalFeature = 4
+    totalFeature = 0
+    if seqType == 'DNA' or seqType == 'RNA':
+        totalFeature = 4
+    else:
+        if seqType == 'PROT':
+            None
         else:
-            if seqType == 'PROT':
-                None
-            else:
-                None
-        # end-if
-        np.save(arr=X, file='blastn-{}'.format(totalFeature))
-        print('blastn-{}.npy generated.'.format(totalFeature))
-    except Exception:
-        print(CRED+'Error: Please check the sequence type.'+CEND)
-    # print(X.shape)
+            None
+    # end-if
+
+    save.datasetSave(X, totalFeature, 'blastn')
 #end-def

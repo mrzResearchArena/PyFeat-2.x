@@ -1,14 +1,20 @@
+CRED = '\033[91m'
+CEND = '\033[0m'
+
 import utils
 import numpy as np
+import save
 
 def generate(X, seqType, args):
     '''
-    # Reference: http://rosalind.info/glossary/blosum62/
+    # Reference-1: http://rosalind.info/glossary/blosum62/
+    # Reference-2: https://www.pnas.org/content/89/22/10915/
     :param X:
     :param seqType:
     :param args:
     :return:
     '''
+
     if seqType == 'PROT':
         d = {
             'A': [4, 0, -2, -1, -2, 0, -2, -1, -1, -1, -1, -2, -1, -1, -1, 1, 0, 0, -3, -2],
@@ -35,11 +41,12 @@ def generate(X, seqType, args):
         }
     else:
         if seqType == 'DNA' or seqType == 'RNA':
+            print(CRED + 'Error: The \'BLOSUM62\' feature is NOT applicable for DNA/RNA.' + CEND)
             return None
         else:
             return None
     #end-if
-    X = utils.process(X, d, args)
+    X = utils.processMono(X, d, args)
     # print(X.shape)
 
     totalFeature = 0
@@ -51,8 +58,8 @@ def generate(X, seqType, args):
         else:
             None
     # end-if
-    np.save(arr=X, file='blosum62-{}'.format(totalFeature))
-    print('blosum62-{}.npy generated.'.format(totalFeature))
+
+    save.datasetSave(X, totalFeature, 'blosum62')
 #end-def
 
 '''

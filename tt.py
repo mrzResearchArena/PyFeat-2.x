@@ -5,6 +5,7 @@ CEND = '\033[0m'
 
 import utils
 import numpy as np
+import save
 
 def generate(X, seqType, args):
     '''
@@ -14,6 +15,7 @@ def generate(X, seqType, args):
     :param args:
     :return:
     '''
+
     if seqType == 'DNA':
         d = {
             'A': [0, 5, 5, 1],
@@ -32,25 +34,24 @@ def generate(X, seqType, args):
                 'p': [0, 0, 0, 0],  # padding
             }
         else:
-            if seqType == 'PROT': None
+            if seqType == 'PROT':
+                print(CRED + 'Error: The \'Transition-Transversion\' feature is NOT applicable for PROT.' + CEND)
+                return None
             else: None
     #end-if
     # print(X)
 
-    try:
-        X = utils.process(X, d, args)
-        # print(X.shape)
+    X = utils.processMono(X, d, args)
+    # print(X.shape)
 
-        totalFeature = 0
-        if seqType == 'DNA' or seqType == 'RNA':
-            totalFeature = 4
+    totalFeature = 0
+    if seqType == 'DNA' or seqType == 'RNA':
+        totalFeature = 4
+    else:
+        if seqType == 'PROT': None
         else:
-            if seqType == 'PROT': None
-            else:
-                None
-        # end-if
-        np.save(arr=X, file='tt-{}'.format(totalFeature))
-        print('tt-{}.npy generated.'.format(totalFeature))
-    except Exception:
-        print(CRED + 'Error: Please check the sequence type.' + CEND)
+            None
+    # end-if
+
+    save.datasetSave(X, totalFeature, 'tt')
 #end-def

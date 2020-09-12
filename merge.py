@@ -5,17 +5,27 @@ CEND = '\033[0m'
 import numpy as np
 import sys
 
-def shapeCheck(Ay):
+def shapeCheck(Ax):
+    '''
+    :param Ax:
+    :return:
+    '''
+
     numberSample = []
     eachSample = []
-    for i in range(len(Ay)):
-        numberSample.append(Ay[i].shape[0])
-        eachSample.append(Ay[i].shape[1])
+    for i in range(len(Ax)):
+        numberSample.append(Ax[i].shape[0])
+        eachSample.append(Ax[i].shape[1])
     #end-for
     return numberSample, eachSample
 #end-def
 
 def merge(*args):
+    '''
+    :param args:
+    :return:
+    '''
+
     args = args[0]   ### ignore!
     file = args[1]   ### ignore!
     # print(file)
@@ -46,8 +56,8 @@ def merge(*args):
     T = np.array(T)
     # print(T)
     # print(T.shape)
-    np.save(file=file, arr=T)
-    print('\'{}.npy\' Generated.'.format(file))
+    np.save(file='Extracted-Features/{}'.format(file), arr=T)
+    print('\'{}.npy\' generated; and the new shape: {}.'.format(file, T.shape))
 #end-def
 
 ###################

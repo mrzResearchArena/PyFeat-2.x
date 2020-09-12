@@ -1,14 +1,16 @@
 import utils
 import numpy as np
+import save
 
 def generate(X, seqType, args):
     '''
-    # Reference: It is a very common feature.
+    # Reference: https://doi.org/10.1016/j.omtn.2019.04.025 (It is also called "identity matrix".)
     :param X:
     :param seqType:
     :param args:
     :return:
     '''
+
     if seqType == 'DNA':
         d = {
             'A': [1, 0, 0, 0],
@@ -55,7 +57,7 @@ def generate(X, seqType, args):
             else: None
     #end-if
     # print(X)
-    X = utils.process(X, d, args)
+    X = utils.processMono(X, d, args)
     # print(X.shape)
 
     totalFeature = 0
@@ -67,6 +69,6 @@ def generate(X, seqType, args):
         else:
             None
     # end-if
-    np.save(arr=X, file='bpf-{}'.format(totalFeature))
-    print('bpf-{}.npy generated.'.format(totalFeature))
+
+    save.datasetSave(X, totalFeature, 'bpf')
 #end-def
