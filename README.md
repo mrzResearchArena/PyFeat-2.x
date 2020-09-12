@@ -58,27 +58,30 @@ Cloning a repository syncs it to our local machine (Example for Linux-based OS).
 ### Table 1: Details Parameters/Arguments for the Features Generation:
 |   Long Argument|   Short Argument |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Argument Help |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   | :---:      |  ---:|
-| --seqType      | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:| Please use {DNA, dna} for DNA squences, {RNA, rna} for RNA squences, {PROT, prot} for protein/peptide squences. |
+| --sequenceType | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:| Please use {DNA, dna} for DNA squences, {RNA, rna} for RNA squences, {PROT, prot} for protein/peptide squences. |
 | --fasta        | -fa                   | string               |  -fa=samplePROT.fa | None | :x: |:no_entry:| Please enter the UNIX-like path. Example: -fa=/home/user/anyFASTA.fa |
 | --terminusLength| -t                   | integer              | -t=50      | None | :x: |:no_entry:| The terminusLength 30 to 100  performed well. |
 | --gGap         | -g                    | integer              | -g=5      | None | :x: |:no_entry:| The -g value is between 1 to 5 performed well. |
 | --kTuple       | -k                    | integer              | -k=3      | None | :x: |:no_entry:| The -k value is between 1 to 3 performed well. |
-| --pseudoComposition | -pseudo          | integer |  -pseudo=0   | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --monoMono          | -f11             | integer |  -f11=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --monoDi            | -f12             | integer |  -f12=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --diMono            | -f21             | integer |  -f13=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSgGaps11         | -g11             | integer |  -g11=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSgGaps12         | -g12             | integer |  -g11=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSgGaps21       | -g21               | integer |  -g12=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --PSkMers         | -psk               | integer |  -g21=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --FkMers | -fkmer          | integer |  -fkmer=0   | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --FgGaps11          | -fg11             | integer |  -fg11=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --FgGaps12          | -fg12             | integer |  -fg12=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --FgGaps21          | -fg21             | integer |  -fg21=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSgGaps11         | -pg11             | integer |  -pg11=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSgGaps12         | -pg12             | integer |  -pg12=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSgGaps21         | -pg21               | integer |  -pg21=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --PSkMers         | -pkmer               | integer |  -pkmer=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --binaryProfileFeature | -bpf     | integer |  -bpf=0      | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --BLOSUM62       | -blosum62        | integer |  -blosum62=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --PAM250         | -pam250          | integer |  -pam250=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>| 1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --physicochemicalProperties1           | -pcp1            | integer |  -pcp=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --physicochemicalProperties2           | -pcp2            | integer |  -pcp=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --physicochemicalProperties3           | -pcp3            | integer |  -pcp=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --physicochemicalProperties4           | -pcp4            | integer |  -pcp=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
-| --physicochemicalProperties5           | -pcp5            | integer |  -pcp=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesP1           | -pcpP1            | integer |  -pcpP1=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesP2           | -pcpP2            | integer |  -pcpP2=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesP3           | -pcpP3            | integer |  -pcpP3=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesP4           | -pcpP4            | integer |  -pcpP4=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesP5           | -pcpP5            | integer |  -pcpP5=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesD1           | -pcpD1            | integer |  -pcpD1=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA </li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesD2           | -pcpD2            | integer |  -pcpD2=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA </li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
+| --physicochemicalPropertiesR1           | -pcpR1            | integer |  -pcpR1=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] PROT</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --BLASTn          | -blastn           | integer |  -blastn=0     | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 | --transitionTransversion   | -tt              | integer |  -tt=0    | {1, 0} | :heavy_check_mark: |<ul><li>[x] DNA</li><li>[x] RNA</li></ul>|1 and 0 denotes (On/Active) and (Off/Deactivate) respectively. |
 
