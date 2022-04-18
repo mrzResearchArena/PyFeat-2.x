@@ -123,11 +123,11 @@ user@machine:~$ python main.py -fa anyFASTA.fasta -bpf 1 -t 40   # default: -t 5
 #### Example-2:
 - ##### Generate only the `Position-wised g-Gaps & monoMono Style`
 ``` console
-user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 # default: -t 50 -g 5, -k 3.
+user@machine:~$ python main.py -fa anyFASTA.fasta -fg11 1 # default: -t 50 -g 5, -k 3.
 ```
 - ##### Generate only the `Position-wised g-Gaps & monoMono Style` with 3-gaps and 4-mers.
 ``` console
-user@machine:~$ python main.py -fa anyFASTA.fasta -g11 1 -g 3 -k 4   # default: -t 30, -g 5, -k 3.
+user@machine:~$ python main.py -fa anyFASTA.fasta -fg11 1 -g 3 -k 4   # default: -t 30, -g 5, -k 3.
 ```
 
 #### Example-3:
@@ -157,13 +157,13 @@ user@machine:~$ python merge.py <anyFileName> <anyFileName.npy> <anyFileName.npy
 #### Example-1:
 - ##### Merge Two File
 ```
-user@machine:~$ python merge.py merge g11-16.npy g11-32.npy
+user@machine:~$ python merge.py merge fg11-16.npy fg11-32.npy
 ```
 
 #### Example-2:
 - ##### Merge Three File, or Merge Multiple File
 ```
-user@machine:~$ python merge.py merge g11-16.npy g11-32.npy g11-32.npy
+user@machine:~$ python merge.py merge fg11-16.npy fg11-32.npy fg11-32.npy
 ```
 
 > **Note:** The PyFeat-2.x tool is able to merge the multiple datasets.
