@@ -19,7 +19,7 @@ Feature Generate Process | Feature Merge Process|
 
 ### 2. Download Package
 #### 2.1. Direct Download
-We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat-2.x) by clicking the link.
+We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=https://github.com/mrzResearchArena/PyFeat-2.x) the package by clicking the link.
 
 > **Note:** The package will download in zip format `(.zip)` named `PyFeat-2.x-master.zip`.
 
