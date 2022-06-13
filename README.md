@@ -8,7 +8,8 @@ In Bioinformatics research, we usually notice using the same biological sequence
 &nbsp;
 
 ### 1. How does it works? or, What is the primary goal of this package?
-We incorporate a lot of state-of-the-art feature groups for DNA, RNA, and protein/peptide sequence. The `PyFeat-2.x` takes FASTA file (anyName.fasta, anyName.fa, anyName.txt) as an input with some parameters for a specific type of sequences; produces the features as NumPy array format (~.npy).
+We incorporate a lot of state-of-the-art feature groups for DNA, RNA, and protein/peptide sequence. The `PyFeat-2.x` takes FASTA file (anyName.fasta, anyName.fa, anyName.txt) as an input with some parameters for a specific type of sequences. Afterward, it produces the features as NumPy array format (~.npy).
+
 
 Feature Generate Process | Feature Merge Process|
 |:----------------------:|:--------------------:|
