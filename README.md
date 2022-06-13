@@ -95,7 +95,7 @@ Cloning a repository syncs it to our local machine. After cloning, we can add an
 | -seq=PROT |  :heavy_check_mark: | None |
 | -seq = PROT |    :x:   |   Please trim the blank spaces on both sides of the `= sign`. |
 | -seq PROT |  :heavy_check_mark: | None |
-| -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi spaces are allowed. |
+| -seq &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; PROT |  :heavy_check_mark: | None; Yes, multi-spaces are allowed. |
 
 > **Note-1:** We can also use `--seqType` (long argument) instead of `-seq` (short argument/shortcut argument).
 
