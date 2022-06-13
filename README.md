@@ -26,7 +26,7 @@ We can directly [download](https://minhaskamal.github.io/DownGit/#/home?url=http
 
 #### 2.2. Clone a GitHub Repository (Optional)
 
-Cloning a repository syncs it to our local machine (Example for Linux-based OS). After clone, we can add and edit files and then push and pull updates.
+Cloning a repository syncs it to our local machine (Example for Linux-based OS). After cloning, we can add and edit files and then push and pull updates.
 - Clone over HTTPS: `user@machine:~$ git clone https://github.com/mrzResearchArena/PyFeat-2.x.git `
 - Clone over SSH: `user@machine:~$ git clone git@github.com:mrzResearchArena/PyFeat-2.x.git `
 
