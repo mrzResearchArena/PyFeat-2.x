@@ -3,13 +3,7 @@
 <!-- #### Author: X ABC, Y ABC, and Z ABC. -->
 
 ### Background / Motivation / Abstract / Gist:
-In Bioinformatics research, we usually noticed that using the same biological sequences and
-even the same algorithms, but the performance varies a lot. Researchers unearth the riddle, it
-is merely the different feature representation process. Feature representation techniques
-drastically enhance the performance. We firmly do believe rational feature representation
-techniques are a major significant contribution in Algorithomic-Bioinformatics and Machine
-Learning in Biological Sciences research. The PyFeat–2.0 is an extensive Deep Learning friendly Python-based tool
-for generating various numerical feature representation schemes from DNA, RNA, and protein primary structure sequences.
+In Bioinformatics research, we usually notice using the same biological sequences and even the same algorithms, but the performance varies greatly. Researchers unearth the riddle; it is merely the different feature representation process. Feature representation techniques drastically enhance performance. We firmly do believe rational feature representation techniques are a major significant contribution to Algorithmic-Bioinformatics and Machine Learning in Biological Sciences research. The PyFeat–2.0 is a comprehensive Deep Learning friendly Python-based tool for generating various numerical feature representation schemes from DNA, RNA, and protein primary structure sequences.
 
 &nbsp;
 
