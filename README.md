@@ -50,7 +50,7 @@ Cloning a repository syncs it to our local machine. After cloning, we can add an
 
 &nbsp;
 
-### Table 1: Details Parameters/Arguments for the Features Generation:
+### Table 1: Details parameters/arguments for the features generation:
 |   Long Argument|   Short Argument |    Variable Type     |   Default  | Choices            | Is it a feature? | Applicable | Argument Help |
 |     :---       |    :---:              |  :---:               |  :---:     | :---:              | :---:   | :---:      |  ---:|
 | --sequenceType | -seq                  | string               | -seq=PROT  | {DNA, dna, RNA, rna, PROT, prot}  |:x:|:no_entry:| Please use {DNA, dna} for DNA squences, {RNA, rna} for RNA squences, {PROT, prot} for protein/peptide squences. |
